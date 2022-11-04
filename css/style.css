@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&family=Teko&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: border-box;
+    width: 1440px;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url("/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+
+}
+.container {
+    width: 400px;
+    height: 600px;
+    background-color: hsl(225, 100%, 98%);
+    margin: 80px auto;
+    border-radius: 15px;
+}
+#illhero {
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+#horder {
+    margin-top: 25px;
+    font-weight: 900;
+}
+.alt_metin {
+    margin: 10px auto;
+    width: 85%;
+    font-weight: 500;
+}
+.icmenu {
+    background-color: hsl(225, 100%, 96%);
+    width: 75%;
+    margin: 20px auto;
+    border-radius: 15px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.plan-left {
+    display: flex;
+    padding: 10px;
+}
+.planText {
+    margin-left: 10px;
+}
+
+#linkmetin {
+    padding: 22px 10px 10px 0;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+#linkmetin:hover {
+    color: hsl(245, 75%, 70%);
+    text-decoration: none;
+}
+.paymen {
+    display: block;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    width: 75%;
+    height: 45px;
+    margin: 5px auto;
+    border-radius: 10px;
+    text-decoration: none;hsl(245, 75%, 52%)
+    font-weight: 500;
+    padding: 10px 0 0 0;
+}
+.paymen:hover {
+    background-color: hsl(245, 75%, 70%);
+}
+.cancel {
+    font-weight: 700;
+    text-decoration: none;
+    color: hsl(223, 47%, 50%);
+}
+.cancel:hover {
+    color: hsl(223, 47%, 20%);
+}
+@media only screen and (max-width: 425px) {
+    body {
+        background-image: url("/images/pattern-background-mobile.svg");
+        font-size: 14px;
+    }
+    .container {
+         max-width: 87%;
+    }
+    #horder {
+        font-size: 23px;
+    }
+}
